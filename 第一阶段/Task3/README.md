@@ -4,7 +4,7 @@
 
 ##task1
 
-[点击查看DEMO](vincentcope.github.io)
+[点击查看DEMO](Http://vincentcope.github.io)
 
 ##task2
 
