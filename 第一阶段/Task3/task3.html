@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度IFE2016-第一阶段-Task3</title>
+	<style>
+	/* 对布局无影响的公共样式 */
+	html,body{margin:0;padding:0;font-family: "TIBch", "Classic Grotesque W01", "Helvetica Neue", Arial, "Hiragino Sans GB", "STHeiti", "Microsoft YaHei", "WenQuanYi Micro Hei", SimSun, sans-serif;}
+	#wrapper,.left,.right,.main{padding:20px;}
+	.left h2{float:right;margin:0;padding:0;color:#fff;}
+	.main h1{margin:0;border-bottom: 1px solid #339966;padding-bottom: 5px;}
+	.main h3{border-left: 3px solid #339966;padding-left: 5px;color:#339966;}
+	.main p{text-indent: 20px;font-size: 20px;color:#333;}
+	.right img{border:0;display:block;margin-bottom:20px;}
+	.right img:last-child{margin-bottom: 0;} 
+	.right img.last-member{margin-bottom: 0;} 		/*应对不支持css3新属性浏览器*/
+
+	/* 左右两个div采用浮动布局，中间宽度自适应 */
+	#wrapper{background: #339966;border:1px solid #999;margin:20px;overflow:auto;}
+	.left{float:left;width:160px;height:80px;background:rgba(255,255,255,.5);overflow: hidden;}
+	.right{float:right;width:80px;background:rgba(255,255,255,.5);}
+	.main{width:auto;margin:0 140px 0 220px;background:rgba(255,255,255,.8);}
+
+	/* 左右div绝对定位 */
+	/* #wrapper{position: relative;background: #339966;border:1px solid #999;margin:20px;}
+	.left{width:160px;height:80px;background: #ccc;position: absolute;top:20px;left:20px;}
+	.right{width:80px;background: #ccc;position: absolute;top:20px;right:20px;}
+	.main{width:auto;margin:0 140px 0 220px;background: #fff;} */
+
+	</style>
+</head>
+<body>
+	<div id="wrapper">
+	<div class="left">
+		<img class="hpfe-logo" src="http://h.picphotos.baidu.com/album/s%3D1600%3Bq%3D90/sign=4f287e9453e736d15c13880eab6074b3/cefc1e178a82b901bdb6f37b748da9773912ef5b.jpg"/>
+		<h2>HPFE</h2>
+	</div>
+	<div class="right">
+		<img src="http://h.picphotos.baidu.com/album/s%3D1600%3Bq%3D90/sign=4f287e9453e736d15c13880eab6074b3/cefc1e178a82b901bdb6f37b748da9773912ef5b.jpg"/>
+		<img src="http://h.picphotos.baidu.com/album/s%3D1600%3Bq%3D90/sign=4f287e9453e736d15c13880eab6074b3/cefc1e178a82b901bdb6f37b748da9773912ef5b.jpg"/>
+		<img src="http://h.picphotos.baidu.com/album/s%3D1600%3Bq%3D90/sign=4f287e9453e736d15c13880eab6074b3/cefc1e178a82b901bdb6f37b748da9773912ef5b.jpg"/>
+		<img src="http://h.picphotos.baidu.com/album/s%3D1600%3Bq%3D90/sign=4f287e9453e736d15c13880eab6074b3/cefc1e178a82b901bdb6f37b748da9773912ef5b.jpg"/>
+		<img class="last-member" src="http://h.picphotos.baidu.com/album/s%3D1600%3Bq%3D90/sign=4f287e9453e736d15c13880eab6074b3/cefc1e178a82b901bdb6f37b748da9773912ef5b.jpg"/>
+	</div>
+	<div class="main">
+		<h1>HPFE</h1>
+		<h3>团队简介：</h3>
+		<p>HPFE取义于High Passion Front End，是一个技术平平却对前端开发充满着高度激情的团队。团队中共有五名成员，来自全国不同的地区，未曾见面，却能一起语愉快地学习，交流，完成相应的任务。HPFE团队整体平均水平为熟悉HTML和CSS基础，能够进行简单的网页布局。JavaScript正在学习之中。相信本团队会在本季度百度IFE培训中学到更多知识，积累更多的经验，结交更深的友谊。</p>
+		<h3>团队成员：</h3>
+		<p><b>李恒丰：</b>在校生，浙江商业职业技术学院，专业为电子商务。Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus veniam omnis aut dolorum hic animi dolores adipisci nihil corporis necessitatibus numquam quis sed quam non quod accusantium soluta, iste.</p>
+		<p><b>严子俊：</b>在校生，大连理工大学，专业为自动化。Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus veniam omnis aut dolorum hic animi dolores adipisci nihil corporis necessitatibus numquam quis sed quam non quod accusantium soluta, iste.</p>
+		<p><b>叶爽：</b>在校生，云南大学，专业为网络工程。Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus veniam omnis aut dolorum hic animi dolores adipisci nihil corporis necessitatibus numquam quis sed quam non quod accusantium soluta, iste.</p>
+		<p><b>任暑楚：</b>在校生，苏州大学应用技术学院，专业为计算机科学与技术。Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit natus veniam omnis aut dolorum hic animi dolores adipisci nihil corporis necessitatibus numquam quis sed quam non quod accusantium soluta, iste.</p>
+		<p><b>唐西良：</b>在校生，湖南农业大学，专业为国际经济与贸易。自学前端开发相关的知识两个月左右，能熟练作用HTML和CSS写静态页面，熟悉原生JS，能运用js写轮播等简单的交互效果。目前未接触jQ和框架类知识。</p>
+	</div>
+	
+	</div>
+</body>
+</html>
