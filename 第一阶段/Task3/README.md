@@ -12,7 +12,7 @@
 
 ##task3
 
-[点击查看DEMO](Http://vincentcope.github.io)
+[点击查看DEMO](Http://vincentcope.github.io/IFE2016/stage1/task3.html)
 
 ##task4
 
