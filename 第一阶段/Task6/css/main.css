@@ -1,0 +1,392 @@
+body{
+	padding:0;
+	margin:0;
+	background: #F3F3F3;
+	font-family: "Microsoft YaHei";
+}
+@media screen and(min-width: 981px){
+	body{
+		width:100%;
+	}
+}
+@media screen and(max-width: 980px){
+	body{
+		width:980px;
+	}
+}
+
+/* 清除浮动影响 */
+.clearfix:after{
+	content: '';
+	display:block;
+	clear: both;
+}
+
+#wrapper{
+	width:892px;
+	height:1386px;
+	padding:0 44px;
+	margin:0 auto;
+	background: #fff;
+	box-shadow: 0 5px 10px #eee;
+}
+h1,h2,h3{
+	margin:0;
+	padding:0;
+}
+/* 头部样式 */
+header{
+	height:61px;
+	border-bottom:2px solid #b7b2b0;
+	position:relative;
+	margin-bottom: 25px;
+}
+.site-title{
+	height:61px;
+	width:110px;
+	background: #EC597A;
+	float: left;
+}
+.site-title a,header>span{
+	font-size: 12px;
+	font-family: "SimHei";
+	position: absolute;	
+	bottom:5px;
+}
+.site-title a{
+	text-decoration: none;
+	left:5px;
+	color: #fff;	
+}
+header>span{
+	color: #EC597A;
+	right:5px;
+}  
+
+/* part2样式 */
+#part2{
+	height: 301px;width:inherit;
+	margin-bottom: 20px;
+}
+div.banner-wrap{
+	width:641px;
+	height:inherit;
+	overflow: hidden;
+	float: left;
+	position: relative;
+}
+.banner-left,.banner-right{
+	position: absolute;
+	height:301px;
+	width:191px;
+}
+.banner-left{
+	background: green;
+	opacity: .1;
+	filter: alpha(opacity=10);
+	left: 0;
+}
+.banner-right{
+	background: red;
+	opacity: .1;
+	filter: alpha(opacity=10);
+	right: 0;
+}
+div.about{
+	width:203px;
+	border-top:2px solid #EC597A;
+	float: right;
+	position: relative;
+	height:299px;
+}
+.about h2{
+	font-size: 24px;
+	text-decoration: underline;
+	text-transform: capitalize;
+	font-variant:small-caps;
+	line-height:40px;
+}
+.about p{
+	margin:0 0 10px 0;
+	font-size: 12px;
+	font-family:"KaiTi ";
+}
+.about h1{
+	font-size: 110px;
+	color: #6BC75E;
+	font-style: italic;
+	text-indent: -16px;
+	height:120px;
+	line-height: 120px;
+}
+.about h3{
+	font-size: 55px;
+	color:#EC597A;
+	height:50px;
+	line-height: 50px;
+	position: absolute;
+	bottom: 0;
+}
+.span1,.span2{
+	position: absolute;
+	color:#EC597A;
+}
+.span1{
+	font-size: 21px;
+	bottom:15px;
+	left:90px;
+}
+.span2{
+	font-size: 12px;
+	bottom:0;
+	left:90px;
+}
+
+/* part3样式 */
+#part3{
+	height:235px;
+	margin-bottom: 20px;
+}
+#part3 div{
+	float: left;
+	width:200px;
+	padding-right:20px;
+}
+#part3 div:last-child{
+	padding-right:0;
+}
+#part3 div h2{
+	font-size: 16px;
+	text-decoration: underline;
+	font-weight: bold;
+	margin-bottom: 16px;
+}
+#part3 div:nth-child(1) h2{
+	color: #09A49E;
+}
+#part3 div:nth-child(2) h2{
+	color: #d2994f;
+}
+#part3 div:nth-child(3) h2{
+	color: #EC597A;
+}
+#part3 div p{
+	color: #767777;
+	font-size: 12px;
+	line-height: 18px;
+	margin:0 0 16px 0;
+}
+#part3 div ul{
+	list-style: none;
+	padding:0;
+}
+#part3 div ul li{
+	font-size: 12px;
+	margin-bottom: 16px;
+	color: #231815;
+	opacity:.7;
+}
+#part3 div ul li span{
+	color:#EC597A;
+}
+/* part4样式 */
+#part4{
+	height:650px;
+	margin-bottom: 10px;
+}
+.part4-left{
+	width:415px;
+	float: left;
+}
+.part4-left h2{
+	text-transform: uppercase;
+	font-size: 42px;
+	color: #11456b;
+	font-weight: bold;
+	font-family: "SimHei";
+	margin-bottom: 10px;
+}
+.part4-left h2 span{
+	color: #FDE91F;
+	font-size: 72px;
+	font-style: italic;
+}
+.part4-left h3{
+	font-size: 33px;
+	font-weight: bold;
+	color: #11456b;
+	font-family: "SimHei";
+	margin-bottom: 10px;
+}
+article{
+	padding-top:18px;
+	border-top:2px solid #11456b;
+}
+article p{
+	margin:0;
+	text-indent: 2em;
+	font-size: 12px;
+	color:#767777;
+	font-family:"SimSun";
+	line-height: 18px;
+	margin-bottom: 16px;
+}
+p.first-para{
+	text-indent: 0;
+}
+p.first-para:first-letter{
+	font-size: 70px;
+	color: #FDE91F;
+	display: block;
+	float:left;
+	line-height: 60px;
+	margin:0 10px 0 0;
+}
+article img{
+	float: right;
+	margin:10px 0 10px 5px;
+	width:167px;
+	height:288px;
+}
+
+.part4-right{
+	width:458px;
+	float: right;
+}
+.right-img{
+	width:458px;
+	height:275px;
+	overflow: hidden;
+	position: relative;
+	margin-bottom:34px;
+}
+.right-img-text{
+	height:61px;
+	width:458px;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	bottom:0;
+}
+.right-img-text h3{
+	color:#fff;
+	position: absolute;
+	bottom: 8px;
+	left:45px;
+	line-height: 44px;
+	height:44px;
+	font-size: 24px;
+	border-left: 3px solid #6BC75E;
+	padding-left: 10px;
+}
+.right-img-text span{
+	font-size: 12px;
+	font-style: italic;
+	color: #6BC75E;
+	display: block;
+	margin: 30px 0 0 160px;
+}
+
+.right-content{
+	height:300px;
+	background: #A3D9CC;
+	background: rgba(163,217,204,.8);
+	padding-top:18px;
+	position: relative;
+}
+.right-content ul{
+	margin:0;
+	list-style:url(http://a.picphotos.baidu.com/album/s%3D1600%3Bq%3D90/sign=be2041953a6d55fbc1c672205d12743b/4034970a304e251f0d7dc9b3a086c9177e3e53f6.jpg);
+	margin-bottom: 46px;
+}
+.right-content ul li{
+	margin-bottom:20px;
+	color: #5a5b5b;
+	text-align: left;
+	font-size: 16px;
+	font-family:"SimSun";
+}
+.right-content ul li span{
+	font-size: 12px;
+	color: #5a5b5b;
+	font-style: italic;
+	text-align: right;
+}
+.right-content-left{
+	width:260px;
+	height:160px;
+	background-color:#EC597A;
+	position: absolute;
+	left:0;
+	bottom: 0;
+}
+.right-content-left h2{
+	font-size: 110px;
+	color:#fff;
+	height:120px;
+	line-height:120px;
+	float: left;
+	margin: 20px 10px;
+}
+.right-content-left div{
+	height:86px;
+	width:165px;
+	float: right;
+	margin-top: 37px;
+	border-left: 2px solid #fff;
+	padding-left: 5px;
+}
+.right-content-left h3{
+	font-size: 18px;
+	font-style: italic;
+	text-transform: uppercase;
+	color: #fff;
+	font-family: "SimHei";
+	line-height: 24px;
+}
+.right-content-left p{
+	font-size: 12px;
+	color:#fff;
+	font-family: "SimHei";
+	margin:0 0 6px 0;
+}
+.right-content-right{
+	width:178px;
+	padding:0 10px;
+	float:right;
+}
+p.quotes{
+	display: inline-block;
+	margin:-28px 0 0 0;
+	color: #5a5b5b;
+	font-size: 14px;
+	font-family: "SimHei";
+	font-style: italic;
+}
+.right-content-right span{
+	color: #EC597A;
+	font-size: 72px;
+	font-family: "SimHei";
+	display: inline-block;
+    height: 40px;
+    width:70px;
+    position: relative;  
+}
+.left-mark{
+    left: -35px;
+}
+.right-mark{
+    left: 120px;
+    top: 5px;
+}
+/* footer样式 */
+footer{
+	height:61px;
+	border-top: 1px solid #938e8c;
+	position: relative;
+}
+footer span{
+	float: right;
+	font-size: 12px;
+	color:#EC597A;
+	font-family: "SimHei";
+}
