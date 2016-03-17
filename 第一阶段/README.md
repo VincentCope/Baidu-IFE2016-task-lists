@@ -4,16 +4,20 @@
 
 ##task1
 
-[点击查看DEMO](Http://vincentcope.github.io)
+[点击查看demo](Http://vincentcope.github.io)
 
 ##task2
 
-[点击查看DEMO](Http://vincentcope.github.io)
+[点击查看demo](Http://vincentcope.github.io)
 
 ##task3
 
-[点击查看DEMO](Http://vincentcope.github.io/IFE2016/stage1/task3.html)
+[点击查看demo](Http://vincentcope.github.io/IFE2016/stage1/task3.html)
 
 ##task4
 
-[点击查看DEMO](Http://vincentcope.github.io)
+[点击查看demo](Http://vincentcope.github.io)
+
+##task6
+
+[点击查看demo](http://vincentcope.github.io/IFE2016/stage1/task6/index.html)
