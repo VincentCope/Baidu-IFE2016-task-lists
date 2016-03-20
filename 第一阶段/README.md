@@ -21,3 +21,8 @@
 ##task6
 
 [点击查看demo](http://vincentcope.github.io/IFE2016/stage1/task6/index.html)
+
+##task7
+
+[点击查看demo](http://vincentcope.github.io/IFE2016/stage1/task7/index.html)
+
