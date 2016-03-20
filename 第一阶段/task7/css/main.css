@@ -1,0 +1,677 @@
+/* 顶部样式 */
+#header{
+	height:55px;
+	width:100%;
+}
+.header-center{
+	min-width:1280px;
+	margin:0 auto;
+	height: inherit;
+}
+a.logo{
+	display: block;
+	height:31px;
+	width:105px;
+	background: url(../img/task7-logo.png) no-repeat;
+	float:left;
+	margin:12px 0 12px 60px;
+}
+.header-center ul{
+	list-style: none;
+	margin:0 40px 0 0;
+	padding:0;
+	float:right; 
+}
+.header-center ul li{
+	float: left;
+	height:55px;
+	line-height: 55px;
+	margin-right: 20px;
+}
+.header-center ul li.sign-in{
+	margin-right: 0px;
+}
+ul li a{
+	height:52px;
+	line-height: inherit;
+	width:65px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	color:#878787;
+	font-size: 14px;
+}
+.header-center ul li.sign-in{
+	margin-right: 0;
+}
+a.sign-in{
+	height:55px;
+	background: url(../img/task7-signin.png) no-repeat center left;
+	color: #e74f4d;
+}
+.header-center ul li a.sign-in:hover{
+	border-bottom: none;
+}
+.header-center ul li a:hover,.header-center ul li.active a{
+	border-bottom: 3px solid #e74f4d;
+	color: #e74f4d;
+}
+
+/* banner样式 */
+#banner{
+	height:690px;
+	min-width:1280px;
+	background: #ccc url(../img/banner.jpg) center;
+	background-size:cover;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Http://vincentcope.github.io/IFE2016/stage1/task7/img/banner.jpg',sizingMethod='scale');
+}
+.banner-shade{
+	background: rgba(0,0,0,.3);
+	height:inherit;
+	width:inherit;
+}
+.banner-shade h1{
+	color: #fff;
+	font-size: 60px;
+	margin:0;
+	padding: 200px 0 20px 120px;
+}
+.banner-shade p{
+	color: #fff;
+	font-size: 22px;
+	font-weight:normal;
+	line-height: 35px;
+	margin:0 0 30px 120px;
+}
+.banner-shade a{
+	display: block;
+	height:63px;
+	line-height: 63px;
+	width:330px;
+	background: #e74f4d;
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	font-weight: normal;
+	letter-spacing: 0.3em;
+	text-indent: 10px;
+	text-decoration: none;
+	margin:10px 0 0 120px;
+}
+/* 特点介绍样式 */
+#point{
+	min-width:1280px;
+	height:250px;
+}
+.point-info{
+	width:25%;
+	height:inherit;
+	text-align: center;
+	float:left;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+.point-info img{
+	margin-top:60px;
+}
+.point-info p{
+	height:52px;
+	color:#767777;
+	border-right: 2px solid #cac6c5;
+}
+.point-info:last-child p{
+	border-right:none;
+}
+/* 关于新世界你还知道什么 */
+#introduce-title{
+	min-width:1280px;
+	height:360px;
+	text-align: center;
+	clear:both;
+	background: #ededec; 
+}
+#introduce-title img{
+	margin-top:90px;
+}
+#introduce-title h2{
+	font-size: 54px;
+	font-weight: normal;
+	color:#867e7a;
+	color: rgba(50,51,51,.5);
+	margin:50px 0 0 0;
+}
+/* 地图搜索样式 */
+#map-search{
+	min-width: 1280px;
+	height:340px;
+	background: url(../img/map.jpg) no-repeat center;
+	background-size: cover;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Http://vincentcope.github.io/IFE2016/stage1/task7/img/map.jpg',sizingMethod='scale');
+}
+.map-search-shade{
+	min-width: inherit;
+	height:inherit;
+	background:rgba(170,52,51,.2);
+	text-align: center;
+}
+.map-search-shade h3{
+	margin:0;
+	padding:50px 0 15px 0;
+	color: #fff;
+	font-size: 22px;
+	font-weight: normal;
+}
+.map-search-shade h3:after{
+	content:'';
+	display: inline-block;
+	height:2px;
+	width:30px;
+	background:#fff;
+}
+.map-search-shade p{
+	margin:0 0 60px 0;
+	font-weight: normal;
+	font-size: 12px;
+	color: #fff;
+}
+.map-search-shade form .select-list{
+	display: inline-block;
+	vertical-align: middle;
+	width:236px;
+	height:38px;
+	margin:0 15px;
+}
+.slect-list-sel{
+	width:inherit;
+	height:inherit;
+	position: relative;
+	cursor:pointer;
+	background:#fff;
+}
+.slect-list-sel span{
+	display: block;
+	height:38px;
+	line-height: 38px;
+	font-size: 12px;
+	color:#a8aaaa;
+	position: absolute;
+	left:12px;
+}
+.slect-list-sel i{
+	display: block;
+	width:19px;
+	height:18px;
+	background:url(../img/task7-sel.png) no-repeat;
+	position: absolute;
+	right:10px;
+	top:10px;
+}
+div.select-list ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+	position: relative;
+	z-index: 50;
+}
+div.select-list ul li{
+	height:25px;
+	background:#e3e3e4;
+	line-height: 25px;
+	color:#767777;
+	font-size: 12px;
+	text-align: left;
+	text-indent: 30px;
+	cursor:pointer;
+}
+div.select-list ul li:hover{
+	background: #be4e48 url(../img/task7-selected.png) no-repeat 10px 0;
+	color: #fff;
+}
+input.serch{
+	border:0;
+	padding:0;
+	background: #be4e48;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing:1em;
+	outline: none;
+}
+/* 活动模块样式 */
+#activity{
+	min-width: 1280px;
+	height:505px;
+	background:#f7f7f7;
+	text-align: center;
+	padding-top:105px;
+}
+.activity-info{
+	display: inline-block;
+	width:217px;
+	height: 390px;
+	overflow: hidden;
+	vertical-align: middle;
+	margin:0 18px;
+}
+.activity-info img{
+	border:1px solid #f0efef;
+}
+.activity-info h2{
+	font-size: 16px;
+	font-weight: normal;
+	margin:0;
+	padding-bottom:8px;
+}
+.activity-info p{
+	margin:0;
+	padding-bottom:5px;
+	font-size: 12px;
+	color:#767777;
+}
+div.shanghai h2{
+	font-size: 20px;
+	letter-spacing: 1.4em;
+	margin-left: 22px;
+}
+/* 新世界介绍部分样式 */
+#introduce-info{
+	height:1085px;
+	min-width: 1280px;
+}
+#introduce-info div.infos{
+	float:left;
+	text-align:center;
+}
+
+/* 介绍第一部分 */
+div.info1{
+	width:66.6666%;
+	height:565px;
+	background: url(../img/man.jpg) no-repeat;
+	background-size: cover;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Http://vincentcope.github.io/IFE2016/stage1/task7/img/man.jpg',sizingMethod='scale');
+	position:relative;
+}
+div.info1 h2{
+	margin:150px 0 0 0;
+	font-size: 50px;
+	color:#fff;
+	font-weight: normal;
+}
+div.info1 h3{
+	margin:0;
+	font-size: 158px;
+	height:140px;
+	line-height: 140px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: normal;
+}
+div.info1 p{
+	font-size: 22px;
+	color: #fff;
+	font-weight: normal;
+	line-height: 35px;
+}
+div.info1 span{
+	width:24px;
+	height:29px;
+	background:url(../img/task7-info1.png) no-repeat;
+	display: block;
+	position: absolute;
+	right:0;
+	top:268px;
+	overflow: hidden;
+}
+/* 介绍第二部分 */
+div.info2{
+	width:33.3333%;
+	height:565px;
+	padding:0 70px;
+	overflow: hidden;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+}
+div.info2 img{
+	margin:120px 0 10px 0;
+}
+div.info2 p{
+	line-height: 35px;
+	font-size: 12px;
+	color:#767777;
+}
+div.info2 a{
+	display:inline-block;
+	height:33px;
+	width:105px;
+	color:#e74f4d;
+	font-size: 12px;
+	line-height: 33px;
+	text-decoration: none;
+	border:1px solid #e74f4d;
+}
+
+div.info2 a:hover{
+	background: #e74f4d;
+	color:#fff;
+}
+div.info2 span.info2-span{
+	height:12px;
+	width:12px;
+	border-radius: 100%;
+	display: inline-block;
+	border:1px solid #929292;
+	margin:25px 5px;
+}
+div.info2 span.selected{
+	background: #929292;
+}
+/* 介绍第三部分 */
+div.info3,div.info4,div.info5{
+	height:520px;
+	width:33.3333%;
+}
+div.info3{
+	background: #e74f4d;
+}
+div.info3 p{
+	font-size: 20px;
+	color:#fff;
+	font-weight: normal;
+	line-height: 30px;
+	margin:150px 0 50px 0;
+}
+div.info3 p:after{
+	content:'';
+	display: inline-block;
+	height:2px;
+	width:30px;
+	background:#fff;
+}
+div.info4{
+	background: #fff;
+}
+div.info4 p{
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 30px;
+	margin:150px 0 50px 0;
+}
+div.info4 p:after{
+	content:'';
+	display: inline-block;
+	height:2px;
+	width:30px;
+	background:#767777;
+}
+div.info3 a,div.info4 a{
+	display: inline-block;
+	height:40px;
+	width:167px;
+	font-size: 20px;
+	line-height: 40px;
+	text-decoration: none;
+}
+div.info3 a{
+	border:1px solid #fff;
+	color:#fff;
+}
+div.info4 a{
+	border:1px solid #e74f4d;
+	color:#e74f4d;
+}
+div.info3 a:hover{
+	background: #fff;
+	color:#e74f4d;
+}
+div.info4 a:hover{
+	background: #e74f4d;
+	color:#fff;
+}
+	
+/* 介绍第五部分 */
+div.info5{
+	background: url(../img/woman.jpg) no-repeat;
+	background-size: cover;
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='Http://vincentcope.github.io/IFE2016/stage1/task7/img/woman.jpg',sizingMethod='scale');
+	position: relative;
+}
+div.info5 span{
+	width:24px;
+	height:29px;
+	background:url(../img/task7-info5.png) no-repeat;
+	display: block;
+	position: absolute;
+	left:0;
+	top:245px;
+	overflow: hidden;
+}
+/* 加入我们 */
+#join-us{
+	text-align: center;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	padding:0 100px;
+	overflow: hidden;
+	min-width: 1280px;
+}
+#join-us h2{
+	margin:100px 0 20px 0;
+	font-size: 22px;
+	font-weight: normal;
+	color: #323333;
+}
+#join-us h2:after{
+	content:'';
+	display: inline-block;
+	height:2px;
+	width:30px;
+	background:#e74f4d;
+}
+#join-us p{
+	font-size: 12px;
+	color:#aaaaaa;
+	margin:0 0 50px 0;
+}
+#join-us .form-wrap{
+	width:100%;
+	min-width: 1080px;
+	overflow: hidden;
+	padding-bottom: 160px;
+}
+/* 条款样式 */
+.form-wrap .rule-list{
+	width:33.3333%;
+	min-width: 360px;
+	float:left;
+	text-align: left;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	padding-right: 50px;
+}
+.rule-list dl{
+	margin:0 0 30px 0;
+	padding-bottom: 20px;
+	position: relative;
+}
+.rule-list dl dt{
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.rule-list dl dd{
+	margin:0;
+	font-size: 12px;
+	color:#aaaaaa;
+}
+.rule-list dl span{
+	display: block;
+	position: absolute;
+	height:9px;
+	width: 45px;
+	background: url(../img/task7-more.png) no-repeat;
+	right: 0;
+	bottom:0;
+}
+/* 提交申请 */
+.form-wrap form{
+	width:66.6666%;
+	min-width: 720px;
+	float:left;
+	text-align: left;
+}
+div.input-wrap{
+	box-sizing:border-box;
+	-moz-box-sizing:border-box; /* Firefox */
+	-webkit-box-sizing:border-box; /* Safari */
+	width:49%;
+	background: #ededee;
+	margin:0 0 15px 0;
+	padding:9px 0;
+}
+div.username,div.usermethed{
+	float:left;
+}
+div.userage,div.useradress{
+	float:right;
+}
+div.input-wrap label{
+	font-size: 12px;
+	color:#767777;
+	width:18%;
+	padding-left:10px;
+	display: inline-block;
+}
+div.input-wrap input[type="text"]{
+	height:20px;
+	width:77%;
+	border:none;
+	display: inline-block;
+	background: #ededee;
+	outline: none;
+}
+div.textarea{
+	width:100%;
+	clear:both;
+}
+div.textarea label{
+	display: block;
+	width:80%;
+}
+div.textarea textarea{
+	border:none;
+	width:98%;
+	height:120px;
+	margin-left: 10px;
+	resize:none;
+	background: #ededee;
+	outline: none;
+}
+.form-wrap form a{
+	display: block;
+	width:100%;
+	height:40px;
+	line-height: 40px;
+	text-align: center;
+	background: #ededee;
+	font-size: 18px;
+	color:#000;
+	text-decoration: none;
+}
+/* 联系我们 */
+#contact-us{
+	height:420px;
+	min-width: 1280px;
+	background: #32353e;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+}
+#contact-us h2{
+	font-size: 22px;
+	color:#fff;
+	font-weight: normal;
+	margin:90px 0 10px 0;
+}
+#contact-us p{
+	margin:0 0 30px 0;
+	color:#fff;
+	font-weight: normal;
+	font-size: 12px;
+}
+/* 邮件 */
+#contact-us .input-email{
+	width:510px;
+	height:40px;
+	display: inline-block;
+	border:1px solid #686166;
+}
+.input-email input{
+	height:40px;
+	border:none;
+	padding:0;
+	width:430px;
+	text-indent: 15px;
+	outline: none;
+}
+.input-email a{
+	display: inline-block;
+	width:80px;
+	height:inherit;
+	line-height: 40px;
+	background: #686166;
+	font-size: 16px;
+	letter-spacing: .5em;
+	text-indent: 10px;
+	color:#fff;
+	text-decoration: none;
+}
+div.share-icon{
+	margin-top:30px;
+}
+div.share-icon span.share{
+	display: inline-block;
+	margin:0 10px;
+}
+div.share-icon span.icon1{
+	background: url(../img/task7-qq.png) no-repeat;
+	width:24px;
+	height:27px;
+}
+div.share-icon span.icon2{
+	background: url(../img/task7-sina.png) no-repeat;
+	width:29px;
+	height:27px;
+}
+div.share-icon span.icon3{
+	background: url(../img/task7-twitter.png) no-repeat;
+	width:28px;
+	height:27px;
+}
+div.share-icon span.icon4{
+	background: url(../img/task7-global.png) no-repeat;
+	width:24px;
+	height:27px;
+}
+.footer{
+	position: absolute;
+	bottom:0;
+	height:58px;
+	width:100%;
+	background:#2f3038;
+}
+#contact-us .footer p{
+	float: left;
+	font-family: "SimSun";
+	margin:32px 0 0 60px;
+}
+#back-to-top{
+	position: absolute;
+	bottom: 10px;
+	right: 60px;
+	font-size: 12px;
+	color:#fff;
+	font-family: "SimSun";
+}
