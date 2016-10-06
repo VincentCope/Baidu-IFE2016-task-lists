@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>task21</title>
+	<style type="text/css">
+		.active{
+			height: 30px;
+			background-color:deepskyblue;
+			color: black;
+			font-family: "微软雅黑";
+			text-align: center;
+			line-height: 30px;
+			display: inline-block;
+			margin: 5px 5px;
+			padding:5px;
+		}
+		#tagContainer{
+			height: 50px;
+		}
+		#tagContainer div:hover{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	Tag:<input type="text" id="tagIn" maxlength="6"/> (不超过6位)
+	<br />
+	<div id="tagContainer"> </div>
+	<textarea id="dataIn"></textarea>	
+	<button>确认兴趣爱好</button>
+	<div id="container"></div>
+	
+	<script src="js/task21.js" ></script>
+</body>
+</html>

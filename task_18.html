@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>task18</title>
+	<style type="text/css">
+		.active{
+			width: 50px;
+			height: 50px;
+			background-color: red;
+			color: white;
+			font-family: "微软雅黑";
+			text-align: center;
+			line-height: 50px;
+			display: inline-block;
+			margin: 5px 5px;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="numIn">
+	<br />
+	<button >左侧入</button>
+	<button >右侧入</button>
+	&nbsp&nbsp&nbsp&nbsp
+	<button >左侧出</button>
+	<button >右侧出</button>
+	<div id="container"></div>
+
+	<script type="text/javascript">
+	var aBtn = document.getElementsByTagName("button");
+	var oTxt = document.getElementById("numIn");
+	var container = document.getElementById("container");
+
+	window.onload=function (){
+		aBtn[0].onclick = function(){
+			var oDiv = createDiv();
+			if (!container.lastChild || container.lastChild.nodeType != 1) {
+				container.appendChild(oDiv);
+			}
+			else{
+				container.insertBefore(oDiv,container.firstChild);
+			}
+		}
+
+		aBtn[1].onclick = function(){
+			var oDiv = createDiv();
+			container.appendChild(oDiv);
+		}
+
+		aBtn[2].onclick = function(){
+			container.removeChild(container.firstChild);
+		}
+
+		aBtn[3].onclick = function(){
+			container.removeChild(container.lastChild);
+		}
+	}
+	function createDiv(){
+		var oDiv = document.createElement("div");
+		var txt = document.createTextNode(oTxt.value);
+
+		oDiv.appendChild(txt);
+		oDiv.className = "active";
+		oDiv.onclick = deleteDiv;
+
+		return oDiv;
+	}
+
+	function deleteDiv(){
+		this.parentNode.removeChild(this);
+	}
+	</script>
+</body>
+</html>
