@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>task19</title>
+	<style type="text/css">
+		.active{
+			width: 30px;
+			background-color: #999;
+			color: #333;
+			font-family: "微软雅黑";
+			text-align: center;
+			display: inline-block;
+			margin: 5px 5px;
+		}
+		#container{
+			border: solid 1px red;
+		}
+	</style>
+</head>
+<body>
+	<input type="text" id="numIn" maxlength="3" />
+	<br />
+	<button >左侧入</button>
+	<button >右侧入</button>
+	&nbsp&nbsp&nbsp&nbsp
+	<button >左侧出</button>
+	<button >右侧出</button>
+	<br />
+	<input type="button" id="sort" value="已有的按从小到大排序" />
+	<div id="container"></div>
+
+	<script type="text/javascript">
+	var aBtn = document.getElementsByTagName("button");
+	var oTxt = document.getElementById("numIn");
+	var container = document.getElementById("container");
+
+	window.onload=function (){
+		aBtn[0].onclick = function(){
+			var flag = count();
+			if (flag == 0) {
+				return false;
+			}
+			var oDiv = createDiv();
+			if (!container.lastChild || container.lastChild.nodeType != 1) {
+				container.appendChild(oDiv);
+			}
+			else{
+				container.insertBefore(oDiv,container.firstChild);
+			}
+		}
+
+		aBtn[1].onclick = function(){
+			var flag = count();
+			if (flag == 0) {
+				return false;
+			}
+			var oDiv = createDiv();
+			container.appendChild(oDiv);
+		}
+
+		aBtn[2].onclick = function(){
+			container.removeChild(container.firstChild);
+		}
+
+		aBtn[3].onclick = function(){
+			container.removeChild(container.lastChild);
+		}
+
+		sort.onclick = function (){
+			var aNum = container.getElementsByTagName('div');
+
+			for (var i = aNum.length - 1; i > 0; i--) {
+				for (var j = aNum.length - 1; j > 0; j--) {
+					if (aNum[j].innerHTML < aNum[j - 1].innerHTML) {
+						var temp = aNum[j].innerHTML;
+						aNum[j].innerHTML = aNum[j-1].innerHTML;
+						aNum[j-1].innerHTML = temp;
+					};
+				};
+			};
+
+			for (var k = aNum.length - 1; k >= 0; k--) {
+				aNum[k].style.height = aNum[k].innerHTML + "px";
+			};
+		}
+	}
+	function createDiv(){
+		if (oTxt.value < 10||oTxt.value > 100) {
+			alert("输入的数字必须在10-100之间，请重试");
+			return false;
+		}
+		else{
+			var oDiv = document.createElement("div");
+			var txt = document.createTextNode(oTxt.value);
+
+			oDiv.appendChild(txt);
+			oDiv.className = "active";
+			oDiv.onclick = deleteDiv;
+			oDiv.style.height = oTxt.value + "px";
+
+			return oDiv;
+		}
+	}
+
+	function deleteDiv(){
+		this.parentNode.removeChild(this);
+	}
+
+	function count(){
+		var aDiv = container.getElementsByTagName("div");
+
+		if (aDiv.length > 59) {
+			alert("仅限60个队列元素，已超出，请删除后重试。");
+			return 0;
+		}
+	}
+	</script>
+</body>
+</html>
